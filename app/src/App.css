@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #575757;
+  }
+
+  /* General Button Styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-2px); /* Slight raise effect */
+}
+
+/* Button Active Effect */
+button:active {
+  background-color: #003d7a; /* Even darker blue */
+  transform: translateY(1px); /* Slight push effect */
+}
+
+/* Button Disabled Style */
+button:disabled {
+  background-color: #cccccc; /* Light grey */
+  cursor: not-allowed;
+}
+
+/* Optional: Add a focus effect for accessibility */
+button:focus {
+  outline: 2px solid #ffcc00;
+}
+
+.main {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.main li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* NavLink Styling */
+.main li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.main li p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555555;
+}
+
+/* Pagination Buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  color: white;
+}
+
+button:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:not(:disabled) {
+  background-color: #007bff;
+}
+
+/* Pagination Text */
+p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
